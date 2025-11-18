@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Letter for a Princess</title>
+    <link rel="stylesheet" href="styles.css"> </head>
+<body>
+
+    <div id="container">
+        <h1>For My Princess</h1>
+        
+        <div id="letter-icon" onclick="openLetter()">
+            ✉️
+        </div>
+
+        <div id="letter-content">
+            <p class="greeting">My Dearest Princess,</p>
+            <p>
+                Every day you make the world brighter, but today, let's celebrate you.
+                *Happy Princess Day!* </p>
+            <p>
+                My love for you grows stronger with every sunrise. You are the kindest,
+                most beautiful soul I know, and you deserve all the happiness in the universe.
+                More love lines will be written in our story, always.
+            </p>
+            <p class="signature">
+                With all my heart,<br>
+                Your baby. 
+            </p>
+            
+            <hr>
+            
+            <p class="question">
+                Do you accept this letter and the love it holds?
+            </p>
+            <div class="buttons">
+                <button onclick="respond('Yes')">💖 Yes, I accept!</button>
+                <button onclick="respond('No')">💔 No</button>
+            </div>
+            
+            <p id="response-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script> </body>
+</html>

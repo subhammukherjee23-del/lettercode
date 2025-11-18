@@ -1,0 +1,76 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #fce4ec; /* Light Pink Background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+}
+
+#letter-icon {
+    font-size: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+#letter-icon:hover {
+    transform: scale(1.1);
+}
+
+#letter-content {
+    display: none; /* Starts hidden */
+    text-align: left;
+    margin-top: 20px;
+    border: 2px solid #ff80ab; /* Hot Pink Border */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.greeting, .signature {
+    font-style: italic;
+    color: #c2185b; /* Dark Pink */
+    text-align: center;
+}
+
+.signature {
+    margin-top: 20px;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:first-child { /* Yes button */
+    background-color: #ff80ab;
+    color: white;
+}
+
+button:last-child { /* No button */
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+#response-message {
+    margin-top: 20px;
+    font-weight: bold;
+}
